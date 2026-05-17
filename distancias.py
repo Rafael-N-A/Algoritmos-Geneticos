@@ -128,14 +128,15 @@ pop = toolbox.population(n=100)
 # Pegar o melhor individuo dentre todas as gerações
 hof = tools.HallOfFame(1)
 
-# Pegar as estatisticas de cada geração para grafico.
+# Pegar as estatisticas de fitness de cada individuoca de uma geração para grafico.
 stats = tools.Statistics(lambda ind: ind.fitness.values[0])
 
+#Minimo, media e maximo do fitness de cada geração para o grafico
 stats.register("min", np.min)
 stats.register("avg", np.mean)
 stats.register("max", np.max)
 
-# Excutando o algoritmo genetico
+# Excutando o algoritmo genetico, logbook armazena as estatisticas de cada geração
 pop, logbook = algorithms.eaSimple(
     pop,
     toolbox,
@@ -166,6 +167,13 @@ fig.add_scatter(
     y=medias,
     mode='lines',
     name='Média'
+)
+
+fig.add_scatter(
+    x=geracoes,
+    y=piores,
+    mode='lines',
+    name='Pior'
 )
 
 fig.update_layout(
