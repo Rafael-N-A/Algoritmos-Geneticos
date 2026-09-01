@@ -1,4 +1,4 @@
-# algoritmos-geneticos
+# Algoritmos-Geneticos
 
 Repositório com implementação de um **Algoritmo Genético** para resolução do **Problema do Caixeiro Viajante (TSP)**, encontrando o menor caminho possível entre um conjunto de pontos de um grafo.
 
