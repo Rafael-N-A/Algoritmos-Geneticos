@@ -45,7 +45,3 @@ Repositório com implementação de um **Algoritmo Genético** para resolução 
    python algoritmo_genetico.py
    ```
 4. Ao final da execução, será exibido o gráfico de convergência e, no terminal, o melhor caminho encontrado junto com sua distância total.
-
-## 📌 Observações
-
-Código de autoria própria, desenvolvido como trabalho/estudo sobre algoritmos genéticos aplicados ao Problema do Caixeiro Viajante.
